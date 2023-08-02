@@ -36,7 +36,6 @@ referencing
 regex
 requests
 rich
-rpds-py
 scipy
 setuptools
 six
