@@ -23,7 +23,7 @@ def transform_text(data):
     data = data.split(' ')
     data = [re.sub('a-zA-Z0-9',' ', title) for title in data]
     data = [d.lower() for d in data]
-    data = [d for d in data if d not in stopwords]
+    data = [d for d in data if d not in stopwords.words()]
 #     data = [ps.stem(d) for d in data]
     data = [lm.lemmatize(d) for d in data]
     data = " ".join(data)
