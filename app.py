@@ -11,6 +11,7 @@ nltk.download('wordnet')
 nltk.download('omw-1.4')
 
 ps = PorterStemmer()
+lm = WordNetLemmatizer()
 
 tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl','rb'))
