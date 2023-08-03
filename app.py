@@ -2,7 +2,7 @@ import re
 import streamlit as st
 import pickle
 from nltk.corpus import stopwords
-from nltk.stem.porter import PorterStemmer, WordNetLemmatizer
+from nltk.stem import PorterStemmer, WordNetLemmatizer
 import nltk
 
 nltk.download("stopwords")
